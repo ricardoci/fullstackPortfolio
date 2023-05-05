@@ -1,5 +1,5 @@
 {
-  "name": "fullstackportfolio",
+  "name": "reactportfolio22",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,10 +17,12 @@
     "swiper": "^6.5.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start ",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "node server.js",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": [
