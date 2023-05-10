@@ -6,7 +6,7 @@
 # description
 
 ```
--Haveing a great portfolio is needed. Here is an opensource template for us to start our job hunting journey!! Have fun learning how to implement the download cv feature, and contance
+-Haveing a great portfolio is needed. Here is an opensource template for us to start our job hunting journey!! Have fun learning how to implement the download cv feature, and contance me email form.
 ```
 # table of contents
 
@@ -55,6 +55,7 @@
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+![Figma](https://img.shields.io/badge/react.js-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
 
 
