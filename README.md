@@ -6,7 +6,8 @@
 # description
 
 ```
--Haveing a great portfolio is needed. Here is an opensource template for us to start our job hunting journey!! Have fun learning how to implement the download cv feature, and contance me email form.
+-Having an impressive portfolio is crucial when it comes to job hunting. Luckily, there is an open-source template available that can help kickstart your journey. Enjoy exploring the template and learning how to implement useful features such as the "Download CV" button, and a contact form that allows potential employers to easily get in touch with you.
+
 ```
 # table of contents
 
@@ -14,24 +15,9 @@
 
 - [description](#description)
 - [table of contents](#tableOfContents)
-
 - [license](#license)
 - [badges](#badges)
 - [deployment/gitHub](#deployment/gitHub)
-
-
-
-
-
-
-
-    
-
-    
-   
-
-
-
 
 
 # License
