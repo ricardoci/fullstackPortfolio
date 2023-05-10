@@ -6,11 +6,7 @@
 # description
 
 ```
-- What was your motivation? I was motivated by observing other portfolios that appeared impressive.
-- Why did you build this project? The purpose of testing was to apply the skills that I acquired during the program.
-- What problem does it solve? A portfolio showcases a range of skills and projects to demonstrate the developer's abilities, while also solving the problem of effectively showcasing their experience to potential employers or clients. 
-- What did you learn?
-During the project development, I faced deployment challenges that taught me some applications may need greater memory capacity for successful uploading.
+-Haveing a great portfolio is needed. Here is an opensource template for us to start our job hunting journey!! Have fun learning how to implement the download cv feature, and contance
 ```
 # table of contents
 
