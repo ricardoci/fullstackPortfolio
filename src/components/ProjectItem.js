@@ -35,12 +35,20 @@ const ProjectItemStyles = styled.div`
       height: 350px;
     }
   }
+  .projectButton{
+    display: inline-block;
+    font-size:1.8rem;
+    text-decoration: underline;
+    margin: 2rem 0;
+    color: white;
+  }
 `;
 
 export default function ProjectItem({
   img = UTrackerImg,
   title = 'Project Name',
   desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  link
 }) {
   return (
     <ProjectItemStyles>
@@ -54,6 +62,8 @@ export default function ProjectItem({
           <h3 className="projectItem__title">{title}</h3>
         </Link>
         <p className="projectItem__desc">{desc}</p>
+        {link && <a className="projectButton" href={link}> Open Project </a>
+        }
       </div>
     </ProjectItemStyles>
   );

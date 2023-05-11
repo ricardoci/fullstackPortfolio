@@ -67,5 +67,7 @@ During the project development, I faced deployment challenges that taught me som
 Heroku deployment: https://reactportfolio22.herokuapp.com/
 
 gitHub: https://github.com/ricardoci/fullstackPortfolio
+https://github.com/ricardoci
+
 
 
