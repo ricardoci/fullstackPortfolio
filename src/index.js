@@ -1,14 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
+
 import App from './App';
 import GlobalStyles from './styles/GlobalStyle';
 import Typography from './styles/Typography';
 
-ReactDOM.render(
+
+
+createRoot(document.getElementById('root')).render(
   <>
     <GlobalStyles />
     <Typography />
     <App />
-  </>,
-  document.getElementById('root')
+  </>
 );

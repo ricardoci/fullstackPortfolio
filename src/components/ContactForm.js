@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
+import emailjs from '@emailjs/browser';
 
 const FormStyle = styled.form`
   width: 100%;
@@ -39,76 +40,68 @@ const FormStyle = styled.form`
   }
 `;
 
-export default function ContactForm() {
+const ContactForm = ({ onSubmit = () => {}  }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const form = useRef();
 
-
-  const handleSubmit = async(e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    console.log('Form submitted!');
-    const data = { name, email, message };
-
-  try {
-    const response = await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
-    });
-
-    if (response.ok) {
-      console.log('Form submitted successfully!');
-    } else {
-      console.error('Failed to submit form.');
-    }
-  } catch (error) {
-    console.error('Error submitting form:', error);
-  }
-  };
-  return (
-    <>
-      <FormStyle>
-        <div className="form-group">
-          <label htmlFor="name">
-            Your Name
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </label>
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">
-            Your Email
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </label>
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">
-            Your message
-            <textarea
-              type="text"
-              id="message"
-              name="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            />
-          </label>
-        </div>
-        <button type="submit" onSubmit={handleSubmit}>Send</button>
+    e.target.reset();
+    emailjs.sendForm('service_uat3tdu', 'template_79rmc3b', form.current, 'h5kOhf70CNc9yDBq6')
+      .then((result) => {
+        alert('your message was delivered')
+        console.log(result.text);
         
+        onSubmit();
+        
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
 
-      </FormStyle>
-    </>
+  return (
+    <FormStyle ref={form} onSubmit={sendEmail}>
+      <div className="form-group">
+        <label htmlFor="name">
+          Your Name
+          <input
+            type="text"
+            id="name"
+            name="user_name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </label>
+      </div>
+      <div className="form-group">
+        <label htmlFor="email">
+          Your Email
+          <input
+            type="email"
+            id="email"
+            name="user_email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </label>
+      </div>
+      <div className="form-group">
+        <label htmlFor="message">
+          Your message
+          <textarea
+            type="text"
+            id="message"
+            name="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
+        </label>
+      </div>
+      <button type="submit">Send</button>
+    </FormStyle>
   );
-}
+};
+
+export default ContactForm;
