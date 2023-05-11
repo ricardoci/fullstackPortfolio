@@ -6,11 +6,8 @@
 # description
 
 ```
-- What was your motivation? I was motivated by observing other portfolios that appeared impressive.
-- Why did you build this project? The purpose of testing was to apply the skills that I acquired during the program.
-- What problem does it solve? A portfolio showcases a range of skills and projects to demonstrate the developer's abilities, while also solving the problem of effectively showcasing their experience to potential employers or clients. 
-- What did you learn?
-During the project development, I faced deployment challenges that taught me some applications may need greater memory capacity for successful uploading.
+-Having an impressive portfolio is crucial when it comes to job hunting. Luckily, there is an open-source template available that can help kickstart your journey. Enjoy exploring the template and learning how to implement useful features such as the "Download CV" button, and a contact form that allows potential employers to easily get in touch with you.
+
 ```
 # table of contents
 
@@ -18,24 +15,9 @@ During the project development, I faced deployment challenges that taught me som
 
 - [description](#description)
 - [table of contents](#tableOfContents)
-
 - [license](#license)
 - [badges](#badges)
 - [deployment/gitHub](#deployment/gitHub)
-
-
-
-
-
-
-
-    
-
-    
-   
-
-
-
 
 
 # License
@@ -58,7 +40,10 @@ During the project development, I faced deployment challenges that taught me som
 
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
-![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+![React.js](https://img.shields.io/badge/React.js-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+
 
 
 
