@@ -174,7 +174,7 @@ export default function HeroSection() {
               <ul>
                 <li>
                   <a
-                    href="http://facebook.com/webcifar"
+                    href="http://facebook.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -183,7 +183,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="http://twitter.com/webcifar"
+                    href="http://twitter.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -192,7 +192,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="http://isntagram.com/web_cifar"
+                    href="http://isntagram.com/ricardocisn"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -201,7 +201,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="http://webcifar.com"
+                    href="https://www.linkedin.com/in/ricardo-cisneros-5b8b3024b"
                     target="_blank"
                     rel="noreferrer"
                   >
