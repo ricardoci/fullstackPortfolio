@@ -23,6 +23,7 @@ const ItemStyles = styled.div`
   svg {
     width: 3.5rem;
   }
+  
 `;
 
 export default function ContactInfoItem({

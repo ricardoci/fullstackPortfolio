@@ -38,22 +38,48 @@ const FormStyle = styled.form`
     border-radius: 8px;
     cursor: pointer;
   }
+  .sentMessage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 2rem;
+
+  
 `;
+
 
 const ContactForm = ({ onSubmit = () => {}  }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [isSent, setIsSent] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-    e.target.reset();
+    
     emailjs.sendForm('service_uat3tdu', 'template_79rmc3b', form.current, 'h5kOhf70CNc9yDBq6')
       .then((result) => {
-        alert('your message was delivered')
+        setIsSent(true);
+        setTimeout(() => {
+          setIsSent(false);
+        }, 3000);
+       
         console.log(result.text);
         
+        const fieldsToClear = ["email", "name", "message"];
+        fieldsToClear.forEach(field => {
+            form.current.elements[field].value = "";
+            
+            setName('');
+            setEmail('');
+            setMessage('');
+
+
+        });
+        
+
         onSubmit();
         
       }, (error) => {
@@ -62,7 +88,11 @@ const ContactForm = ({ onSubmit = () => {}  }) => {
   };
 
   return (
+
+    
     <FormStyle ref={form} onSubmit={sendEmail}>
+     
+     {isSent ? <div className='sentMessage'><p>Message sent!</p></div> : null}
       <div className="form-group">
         <label htmlFor="name">
           Your Name
@@ -70,6 +100,7 @@ const ContactForm = ({ onSubmit = () => {}  }) => {
             type="text"
             id="name"
             name="user_name"
+            autoComplete="off"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
@@ -81,6 +112,7 @@ const ContactForm = ({ onSubmit = () => {}  }) => {
           <input
             type="email"
             id="email"
+            autoComplete="off"
             name="user_email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -93,14 +125,17 @@ const ContactForm = ({ onSubmit = () => {}  }) => {
           <textarea
             type="text"
             id="message"
+            autoComplete="off"
             name="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
         </label>
       </div>
+      
       <button type="submit">Send</button>
     </FormStyle>
+    
   );
 };
 
