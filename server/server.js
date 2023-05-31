@@ -15,17 +15,19 @@ app.get('/FullStackResume.pdf', (req, res) => {
   res.sendFile(filePath);
 });
 
-// Catch-all route to serve the index.html file
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/public', 'index.html'));
-});
+// Serve the index.html file in the production environment
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../client/build")));
-}
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/build/index.html"));
-});
+  app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "../client/build/index.html"));
+  });
+} else {
+  // Serve the index.html file in the development environment
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/public', 'index.html'));
+  });
+}
 
 // Start the server
 const port = process.env.PORT || 3001;
