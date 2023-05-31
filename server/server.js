@@ -28,6 +28,12 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.join(__dirname, '../client/public', 'index.html'));
   });
 }
+// Example Express server configuration for handling all routes
+app.use(express.static(path.join(__dirname, '../client/build')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+});
 
 // Start the server
 const port = process.env.PORT || 3001;
