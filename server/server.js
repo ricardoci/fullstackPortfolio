@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, '../client/dist')));
+app.use(express.static(path.join(__dirname, '../client/public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
