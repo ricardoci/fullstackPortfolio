@@ -23,9 +23,19 @@ const ButtonStyle = styled.div`
 
 export default function Button({
   btnText = 'test',
-  btnLink = 'ricardocisneros197@gmail.com',
+  btnLink = '/FullStackResume.pdf',
   outline = false,
-}) {
+  download = false,
+}) { 
+  if (download) {
+  return (
+    <ButtonStyle outline={outline} className="button-wrapper">
+      <a className="button" href={btnLink} download>
+        {btnText}
+      </a>
+    </ButtonStyle>
+  );
+} 
   return (
     <ButtonStyle outline={outline} className="button-wrapper">
       <Link className="button" to={btnLink}>

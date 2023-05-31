@@ -97,7 +97,10 @@ export default function About() {
                   I strive to continuously improve as a developer every day. My passion for learning new technologies stems from the desire to simplify tasks and enhance efficiency. My goal is to have fun while building innovative solutions that enable people to explore and fulfill their potential.
                 </PText>
               </div>
-              <Button btnText="Download CV" btnLink="#" />
+            
+              <a href="FullStackResume.pdf" download>
+              <Button btnText="Download CV" download />
+              </a>
             </div>
             <div className="right">
               <img src={AboutImg} alt="me" />
