@@ -3,8 +3,7 @@ const path = require('path');
 const app = express();
 
 // Serve static files from the React app
-
-app.use(express.static('../client/dist'));
+app.use(express.static(path.join(__dirname, '../client/dist')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -17,7 +16,9 @@ app.get('/FullStackResume.pdf', (req, res) => {
 });
 
 // Catch-all route to serve the index.html file
-
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/dist', 'index.html'));
+});
 
 // Start the server
 const port = process.env.PORT || 3001;
