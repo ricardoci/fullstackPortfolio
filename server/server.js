@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, '../client/dist')));
+app.use(express.static(path.join(__dirname, '../client/build')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -15,22 +15,7 @@ app.get('/FullStackResume.pdf', (req, res) => {
   res.sendFile(filePath);
 });
 
-// Serve the index.html file in the production environment
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../client/build")));
-
-  app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "../client/build/index.html"));
-  });
-} else {
-  // Serve the index.html file in the development environment
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/public', 'index.html'));
-  });
-}
-// Example Express server configuration for handling all routes
-app.use(express.static(path.join(__dirname, '../client/build')));
-
+// Serve the index.html file for all routes
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
 });
