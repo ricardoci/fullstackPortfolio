@@ -98,7 +98,7 @@ export default function About() {
                 </PText>
               </div>
             
-              <Button btnText="Download CV" download href="FullStackResume.pdf" />
+              <Button btnText="Download Resume" download href="FullStackResume.pdf" />
 
             </div>
             <div className="right">
