@@ -114,7 +114,7 @@ export default function About() {
                 items={['Bloomington High School, California']}
               />
               <AboutInfoItem
-                title="Collage"
+                title="College"
                 items={['Riverside City College']}
               />
               <AboutInfoItem
