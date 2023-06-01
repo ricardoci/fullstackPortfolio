@@ -59,7 +59,7 @@ const ContactForm = ({ onSubmit = () => {}  }) => {
   const sendEmail = (e) => {
     e.preventDefault();
     
-    emailjs.sendForm('service_uat3tdu', 'template_79rmc3b', form.current, 'h5kOhf70CNc9yDBq6')
+    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_KEY)
       .then((result) => {
         setIsSent(true);
         setTimeout(() => {
