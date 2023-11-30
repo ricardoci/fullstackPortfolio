@@ -24,7 +24,7 @@ export default function App() {
           <Route path="/Projects">
             <Projects />
           </Route>
-          <Route path="/Home">
+          <Route path="/">
             <Home />
           </Route>
         </Switch>
