@@ -82,7 +82,7 @@ export default function ProjectsSection() {
               },
             }}
           >
-            
+            // eslint-disable-next-line array-callback-return
             {projects.map((project, index) => {
               if (index >= 5) return;
               return (
