@@ -5,8 +5,11 @@
   "main": "server.js",
   "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    
+    "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject",
     "watch": "nodemon",
     "seed": "node seeders/seed.js",
     "format": "prettier --write \"**/*.{js,jsx}\""
