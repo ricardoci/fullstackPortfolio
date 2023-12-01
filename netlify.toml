@@ -1,7 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "public"
-  base = "src"
+  
 [headers]
   X-Frame-Options = "DENY"
   Content-Security-Policy = "default-src 'self'; script-src 'self' https://trusted-script-source.com; img-src 'self' https://trusted-image-source.com; style-src 'self' https://trusted-style-source.com; font-src 'self' https://trusted-font-source.com;"
