@@ -4,3 +4,7 @@
 [headers]
   X-Frame-Options = "DENY"
   Content-Security-Policy = "default-src 'self'; script-src 'self' https://trusted-script-source.com; img-src 'self' https://trusted-image-source.com; style-src 'self' https://trusted-style-source.com; font-src 'self' https://trusted-font-source.com;"
+[[redirects]]
+  from = "https:/localhost/3001/"
+  to = "https://main--creative-daffodil-d987ea.netlify.app/"
+  status = 200
