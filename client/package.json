@@ -39,12 +39,7 @@
     "eject": "react-scripts eject",
     "dev": "webpack-dev-server --open"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
+
   "browserslist": {
     "production": [
       ">0.2%",
