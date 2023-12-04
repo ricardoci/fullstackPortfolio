@@ -9,6 +9,7 @@
     "start": "node server.js",
     "watch": "nodemon",
     "seed": "node seeders/seed.js",
+    "develop": "cd server && npm run start\" \"cd client && npm start\"",
     "format": "prettier --write \"**/*.{js,jsx}\""
   },
   "keywords": [],
