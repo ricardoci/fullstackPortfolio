@@ -3,3 +3,7 @@
   
   baseURL = "/"
 
+[[redirects]]
+  from = "https://creative-daffodil-d987ea.netlify.app/"
+  to = "https://fullstackportfolio.onrender.com/"
+  status = 200
