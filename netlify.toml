@@ -2,7 +2,3 @@
   command = "npm install && npm run build"
   
 
-[[redirects]]
-  from = "https://main--creative-daffodil-d987ea.netlify.app/"
-  to = "/"
-  status = 200
