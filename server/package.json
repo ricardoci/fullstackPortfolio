@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "watch": "nodemon",
     "seed": "node seeders/seed.js",
-    "develop": "cd server && npm run start\" \"cd client && npm start\"",
+    
     "format": "prettier --write \"**/*.{js,jsx}\""
   },
   "keywords": [],

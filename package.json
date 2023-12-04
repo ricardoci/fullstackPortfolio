@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
-  "homepage": "/index.html",
+  
   "scripts": {
     "start": "cd server && npm run start",
     "develop": "cd server && npm run start\" \"cd client && npm start\"",
