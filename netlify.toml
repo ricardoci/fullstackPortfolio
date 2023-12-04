@@ -4,6 +4,6 @@
   baseURL = "/"
 
 [[redirects]]
-  from = "https://creative-daffodil-d987ea.netlify.app/"
-  to = "https://fullstackportfolio.onrender.com/"
+  from = "http://localhost:10000/"
+  to = "https://main--creative-daffodil-d987ea.netlify.app/"
   status = 200
