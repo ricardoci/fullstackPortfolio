@@ -6,8 +6,8 @@
   "scripts": {
     "start": "npm run start:client",
     "start:client": "cd ../client && npm start",
-    "install": "server && npm i && cd ../client && npm i",
-    "seed": " server && npm run seed",
+    "install": "cd ./server && npm i && cd ../client && npm i",
+    "seed": " cd ./server && npm run seed",
     "build": "cd ../client && npm run build"
   },
   "keywords": [],
