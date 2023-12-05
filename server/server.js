@@ -3,7 +3,10 @@ const path = require('path');
 const app = express();
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, '../client/build')));
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, '../../client/build')));
+// The extra `../` in the path to match the correct directory structure
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
