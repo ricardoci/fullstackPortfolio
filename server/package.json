@@ -9,7 +9,8 @@
     "start": "node server.js",
     "watch": "nodemon",
     "seed": "node seeders/seed.js",
-    "format": "prettier --write \"**/*.{js,jsx}\""
+    "format": "prettier --write \"**/*.{js,jsx}\"",
+    "build": "cd client && npm run build"
   },
   "keywords": [],
   "author": "",
