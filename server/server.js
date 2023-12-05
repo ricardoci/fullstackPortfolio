@@ -21,9 +21,9 @@ app.get('*', (req, res) => {
 });
 
 // Start the server
-const port = process.env.PORT || 10000;
+const Base_Url = process.env.Base_Url || 3001;
 app.listen(port, () => {
-  console.log(`App is listening on port ${port}`);
+  console.log(`App is listening on port ${Base_Url}`);
 });
 
 module.exports = app;
