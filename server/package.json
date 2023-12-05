@@ -9,7 +9,7 @@
     
       "start": "npm run build-client && node server.js",
       
-      "build-client": "cd ../client && npm run build",
+      "build-client": "cd ../client && react-scripts build && npm run build",
     
     "watch": "nodemon",
     "seed": "node seeders/seed.js",
