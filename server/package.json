@@ -18,14 +18,15 @@
     "apollo-server-express": "^3.6.2",
     "dotenv": "^16.0.3",
     "express": "^4.17.2",
+    "fullstackportfolio": "file:..",
     "graphql": "^16.3.0",
     "langchain": "^0.0.75",
     "mongoose": "^7.0.2",
     "pdf-parse": "^1.1.1"
   },
   "devDependencies": {
+    "concurrently": "^5.1.0",
     "nodemon": "^2.0.3",
-    "prettier": "^2.7.1",
-    "concurrently": "^5.1.0"
+    "prettier": "^2.7.1"
   }
 }

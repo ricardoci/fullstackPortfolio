@@ -4,11 +4,13 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
-    "start": "cd server && npm run start",
-    "develop": "cd client && npm start \"cd server && npm run start\" \"concurrently\"",
-    "install": "cd server && npm i && cd client && npm i",
-    "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build"
+    "start": "npm run install:all && npm run develop",
+    "develop": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "start:server": "npm start --prefix server",
+    "start:client": "npm start --prefix client",
+    "seed": "npm run seed --prefix server",
+    "build": "npm run build --prefix client"
   },
   "keywords": [],
   "author": "",
