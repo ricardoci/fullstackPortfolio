@@ -6,11 +6,15 @@
   "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd client && npm install && npm run build && cd .. && npm install && node server.js",
+    
+      "start": "npm run install-client && npm run build-client && npm install && node server.js",
+      "install-client": "cd client && npm install",
+      "build-client": "cd client && npm run build",
+    
     "watch": "nodemon",
     "seed": "node seeders/seed.js",
-    "format": "prettier --write \"**/*.{js,jsx}\"",
-    "build": "cd client && npm run build && npm i"
+    "format": "prettier --write \"**/*.{js,jsx}\""
+    
   },
   "keywords": [],
   "author": "",
