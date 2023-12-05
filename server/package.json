@@ -5,17 +5,16 @@
   "main": "server.js",
   "type": "commonjs",
   "scripts": {
-    "start": "cd server",
-    "develop": "concurrently \"cd ../client && npm start\"",
-    "install": "cd server && npm i && cd ../client && npm i",
+    "start": "concurrently  \"npm run client\"",
     
+    "client": "cd ../client && npm start",
+    "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd ../client && npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    
     "dotenv": "^16.0.3",
     "langchain": "^0.0.75",
     "pdf-parse": "^1.1.1",
@@ -23,11 +22,9 @@
     "express": "^4.17.2",
     "graphql": "^16.3.0",
     "mongoose": "^7.0.2"
-    
   },
   "devDependencies": {
     "nodemon": "^2.0.3",
-
     "prettier": "^2.7.1"
   }
 }
