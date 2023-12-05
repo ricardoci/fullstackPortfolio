@@ -4,19 +4,21 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
-    "start:server": "cd server && npm start",
-    "start:client": "cd client && npm start",
-    "develop": "npm-run-all -p start:server start:client",
-    "install": "npm-run-all -p install:server install:client",
-    "install:server": "cd server && npm install",
-    "install:client": "cd client && npm install",
+    "start": "cd server && npm run start",
+    "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build"
   },
+  
+
+  
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^8.2.2",
     "express": "^4.18.2",
     "react-scripts": "^5.0.1",
     "styled-components": "^5.3.10"
