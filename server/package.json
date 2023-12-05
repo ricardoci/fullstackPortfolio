@@ -7,9 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     
-      "start": "npm run build-client && node server.js",
+      "start": "npm build-client && node server.js",
       
-      "build-client": "cd ../client && react-scripts build && npm run build",
+      "build-client": "cd ../client  && npm  build",
     
     "watch": "nodemon",
     "seed": "node seeders/seed.js",
