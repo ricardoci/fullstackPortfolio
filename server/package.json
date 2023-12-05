@@ -5,16 +5,11 @@
   "main": "server.js",
   "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd server",
+    "develop": "concurrently \"cd ../client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
     
-      "start": "npm run build-client && npm install && node server.js",
-      
-      "build-client": "cd ../client && npm install && cd ../client && npm run build ",
-    
-    "watch": "nodemon",
-    "seed": "node seeders/seed.js",
-    "format": "prettier --write \"**/*.{js,jsx}\""
-    
+    "build": "cd ../client && npm run build"
   },
   "keywords": [],
   "author": "",
