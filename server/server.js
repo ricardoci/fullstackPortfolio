@@ -3,10 +3,7 @@ const path = require('path');
 const app = express();
 
 // Serve static files from the React app
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, '../../client/build')));
-// The extra `../` in the path to match the correct directory structure
-
+app.use(express.static(path.join(__dirname, '../client/build')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -24,9 +21,9 @@ app.get('*', (req, res) => {
 });
 
 // Start the server
-const port = process.env.port || 3001;
-app.listen(port, () => {
-  console.log(`App is listening on port ${port}`);
+const Port = process.env.PORT || 3001;
+app.listen(Port, () => {
+  console.log(`App is listening on port ${Port}`);
 });
 
 module.exports = app;
