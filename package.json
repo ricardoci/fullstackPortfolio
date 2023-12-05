@@ -4,16 +4,15 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
-    "start:both": "npm-run-all --parallel server:start client:start",
-    "develop": "npm-run-all start:both install:both",
-    "server:start": "cd server && npm start",
-    "client:start": "cd client && npm start",
-    "install:both": "npm-run-all install:server install:client",
-    "install:server": "cd server && npm i",
-    "install:client": "cd client && npm i",
+    "start": "cd server && npm run start",
+    "develop":"cd server && npm start & cd client && npm start",
+    "install": "cd server && npm i && cd client && npm i",
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build"
   },
+  
+
+  
   
   "keywords": [],
   "author": "",
