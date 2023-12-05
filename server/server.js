@@ -22,7 +22,7 @@ app.get('*', (req, res) => {
 
 // Start the server
 const hello = process.env.BASE_URL || 3001;
-app.listen(port, () => {
+app.listen(BASE_URL, () => {
   console.log(`App is listening on port ${hello}`);
 });
 
