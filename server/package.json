@@ -1,19 +1,26 @@
 {
-  "name": "server",
+  "name": "mern-shopping",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
-  "type": "commonjs",
+  "main": "server/server.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "watch": "nodemon",
     "seed": "node seeders/seed.js",
     "format": "prettier --write \"**/*.{js,jsx}\""
+=======
+    "start": "npm run start:client",
+    "start:client": "cd ../client && npm start",
+    "seed": " cd ../server && npm run seed",
+    "build": "cd ../client && npm run build"
+>>>>>>> 7b28d93a1da8985d5e51ed9499fd5d69f8eaca8d
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "dependencies": {
     "apollo-server-express": "^3.6.2",
     "dotenv": "^16.0.3",
@@ -28,5 +35,16 @@
     "concurrently": "^5.1.0",
     "nodemon": "^2.0.3",
     "prettier": "^2.7.1"
+=======
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "dependencies": {
+    "fullstackportfolio": "file:..",
+    "moment": "^2.29.4",
+    "react-router": "^6.14.1",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^5.3.10"
+>>>>>>> 7b28d93a1da8985d5e51ed9499fd5d69f8eaca8d
   }
 }
