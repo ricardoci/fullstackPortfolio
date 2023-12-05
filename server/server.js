@@ -24,7 +24,7 @@ app.get('*', (req, res) => {
 });
 
 // Start the server
-const Port = process.env.BASE_URL || 3001;
+const Port = process.env.Port || 3001;
 app.listen(Port, () => {
   console.log(`App is listening on port ${Port}`);
 });
