@@ -5,8 +5,8 @@
   "main": "server.js",
   "type": "commonjs",
   "scripts": {
-    "start": "npm run client && react-scripts start",
-    "client": "cd ../client && npm start",
+    "start": "npm run client",
+    "client": "cd ../client && npm start && react-scripts start",
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd ../client && npm run build"
   },
