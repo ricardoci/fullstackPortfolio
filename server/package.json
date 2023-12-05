@@ -5,7 +5,7 @@
   "main": "server.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node_modules/.bin/concurrently \"npm run server\" \"npm run client\"",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd server && npm start",
     "client": "cd ../client && npm start",
     "install": "cd server && npm i && cd ../client && npm i",
@@ -16,7 +16,6 @@
   "license": "ISC",
   "dependencies": {
     "apollo-server-express": "^3.6.2",
-    "concurrently": "^8.2.2",
     "dotenv": "^16.0.3",
     "express": "^4.17.2",
     "graphql": "^16.3.0",
@@ -26,6 +25,7 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.3",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "concurrently": "^5.1.0"
   }
 }
