@@ -3,16 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
- "scripts": {
-  "develop": "npm run server:start && npm run client:start",
-  "server:start": "cd server && npm start",
-  "client:start": "cd client && npm start",
-  "install": "npm run install:server && npm run install:client",
-  "install:server": "cd server && npm i",
-  "install:client": "cd client && npm i",
-  "seed": "cd server && npm run seed",
-  "build": "cd client && npm run build"
-},
+  "scripts": {
+    "start:both": "npm-run-all --parallel server:start client:start",
+    "develop": "npm-run-all start:both install:both",
+    "server:start": "cd server && npm start",
+    "client:start": "cd client && npm start",
+    "install:both": "npm-run-all install:server install:client",
+    "install:server": "cd server && npm i",
+    "install:client": "cd client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
