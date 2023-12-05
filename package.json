@@ -6,12 +6,12 @@
 
   "scripts": {
     "start": "cd server && npm run start",
-    "develop": "start cmd /k npm run server && npm run client",
+    "develop": "cd server && npm run start && cd ../client && npm start",
     "server": "cd server && npm start",
-    "client": "cd client && npm start",
+    "client": "cd ../client && npm start",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build"
+    "build": "cd ../client && npm run build"
   },
   
   
