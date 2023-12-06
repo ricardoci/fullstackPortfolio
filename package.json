@@ -5,7 +5,7 @@
   "main": "server/server.js",
   "scripts": {
     "start": "cd server && npm run start",
-    "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
+    "develop": "cd client && npm start",
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build"
   },
