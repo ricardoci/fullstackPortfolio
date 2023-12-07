@@ -38,10 +38,17 @@
     "webpack-dev-server": "^4.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "dotenv -e .env.production -- vite build",
+    "circular": "madge --circular ./src/index.tsx",
+    "dev": "dotenv -e .env.development -- vite",
+    "extract-translations": "i18next 'src/**/*.{ts,tsx}'",
+    "jest": "jest",
+    "lint": "eslint .",
+    "lint-fix": "npm run lint -- --fix",
+    "preview": "dotenv -e .env.development -- vite preview",
+    "start": "serve ./dist",
+    "test": "pnpm run tsc && pnpm run lint && pnpm run jest",
+    "tsc": "tsc"
   },
   "eslintConfig": {
     "extends": [
