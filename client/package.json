@@ -41,14 +41,12 @@
     "@solidjs/router": "^0.5.0",
     "solid-js": "^1.5.7",
     "solid-start": "^0.1.0",
-    "undici": "^5.10.0",
-    "next": "12.3.1"
+    "undici": "^5.10.0"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "solid-start dev",
+    "build": "solid-start build",
+    "start": "solid-start start"
   },
   "eslintConfig": {
     "extends": [
@@ -72,8 +70,7 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "react-scripts": "^5.0.1",
     "react-router-dom": "^5.3.4",
-    "eslint": "8.23.1",
-    "eslint-config-next": "12.3.1",
+   
     "solid-start-netlify": "^0.1.0"
   }
 }
