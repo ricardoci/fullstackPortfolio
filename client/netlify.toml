@@ -1,4 +1,5 @@
 [build]
   command = "solid-start build"
   functions = "netlify/functions"
-  publish = "build"
+  publish = "netlify"
+  
