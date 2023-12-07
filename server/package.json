@@ -1,14 +1,9 @@
 {
-  "name": "mern-shopping",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "server/server.js",
+  "main": "server.js",
   "type": "commonjs",
-  "engines": {
-    "npm": "6.x",
-    "platform": "linux",
-    "node": "18.14.0"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -20,18 +15,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apollo-server-express": "^3.6.2",
+    
     "dotenv": "^16.0.3",
-    "express": "^4.17.2",
-    "fullstackportfolio": "file:..",
-    "graphql": "^16.3.0",
     "langchain": "^0.0.75",
-    "mongoose": "^7.0.2",
-    "pdf-parse": "^1.1.1"
+    "pdf-parse": "^1.1.1",
+    "apollo-server-express": "^3.6.2",
+    "express": "^4.17.2",
+    "graphql": "^16.3.0",
+    "mongoose": "^7.0.2"
+    
   },
   "devDependencies": {
-    "concurrently": "^5.1.0",
     "nodemon": "^2.0.3",
+
     "prettier": "^2.7.1"
   }
 }
