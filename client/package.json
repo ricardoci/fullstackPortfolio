@@ -1,8 +1,9 @@
 {
   "name": "fullstackportfolio",
   "version": "0.1.0",
+  
   "engines": {
-    "node": "14.x"
+    "node": ">=16"
   },
   
   "private": true,
@@ -35,15 +36,17 @@
     "web-vitals": "^2.1.4",
     "webpack": "^5.84.1",
     "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.1.1"
+    "webpack-dev-server": "^4.1.1",
+    "@solidjs/meta": "^0.28.0",
+    "@solidjs/router": "^0.5.0",
+    "solid-js": "^1.5.7",
+    "solid-start": "^0.1.0",
+    "undici": "^5.10.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-   
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build": "npm run clean && npm-run-all build-client build-server",
-    "netlify-build": "npm run build"
+    "dev": "solid-start dev",
+    "build": "solid-start build",
+    "start": "solid-start start"
   },
   "eslintConfig": {
     "extends": [
@@ -66,6 +69,8 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "react-scripts": "^5.0.1",
-    "react-router-dom": "^5.3.4"
+    "react-router-dom": "^5.3.4",
+   
+    "solid-start-netlify": "^0.1.0"
   }
 }
