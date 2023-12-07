@@ -3,8 +3,7 @@ import ProjectImg from '../images/coder.GIF';
 import UTrackerImg from '../images/CryptoData.jpg';
 import GreenCtgImg from '../images/weatherApp.PNG';
 import CoinTrackerImg from '../images/Screenshot 2023-03-21 234059.png';
-import CavinImg from '../images/UpdateBio.png';
-
+import CavinImg from '../images/coder.GIF';
 
 const projects = [
   {
@@ -35,9 +34,8 @@ const projects = [
     id: uuidv4(),
     name: "Coming Soon",
     desc:
-      'A MERN stack application implements a signup and login functionality for users to gain access to their profiles. Within their profiles, users can conveniently update their bio, which is securely stored in a MongoDB database.',
+      'n/a',
     img: CavinImg,
-    link: 'https://priceanalysiss.herokuapp.com/',
   },
   {
     id: uuidv4(),
