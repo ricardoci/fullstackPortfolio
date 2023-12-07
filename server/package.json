@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
+  "type": "commonjs",
+  "engines": {
+    "npm": "6.x",
+    "platform": "linux",
+    "node": "18.14.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",

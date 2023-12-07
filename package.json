@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
-  "engines": {
-    "node": "v18.16.1"
-  },
   "scripts": {
     "start": "cd server && npm run start",
     "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
@@ -17,11 +14,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^8.2.0"
+    "concurrently": "^5.1.0"
   },
   "dependencies": {
-    "moment": "^2.29.4",
-    "react-router": "^6.14.1",
     "styled-components": "^5.3.10"
   }
 }
