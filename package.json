@@ -2,6 +2,11 @@
   "name": "fullstackportfolio",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": ">=18.16.1"
+  },
+  
+  
   "main": "server/server.js",
   "scripts": {
     "start": "cd server && npm run start",
